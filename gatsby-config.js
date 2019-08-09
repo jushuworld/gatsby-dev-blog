@@ -7,7 +7,7 @@ module.exports = {
     author: `__EDIT__YOUR_NAME_HERE`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`, // allow to insert metadata
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,8 +15,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // plugin for picture
+    `gatsby-plugin-sharp`, // ''
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
